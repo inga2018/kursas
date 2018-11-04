@@ -1,0 +1,15 @@
+h1,h2{
+	color: #EE3E80;
+}
+#pirmas{
+	font-style: italic;
+}
+p{
+	text-align: left;
+}
+p{
+	font-family: arial;
+}
+p.patarimas{
+	color: grey;
+}
