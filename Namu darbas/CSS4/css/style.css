@@ -1,0 +1,51 @@
+.page{
+	border-style: double;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	font-weight: bold;
+	display: block;
+	padding: 20px;
+	letter-spacing: 1px;
+	border-top: 3px solid black;
+	border-bottom: 1px solid black;
+}
+ul li a:hover{
+		color: red;
+		font-weight: bold;
+	}
+ul{
+	padding-inline-start: 0px;
+}
+.menu{
+	width: 100%;
+	text-align: center;
+}
+	a.pagrindinis{
+		color: red;
+	}
+
+img.logo{
+		margin-top: 30px;
+		margin-bottom: 25px;
+		width: 200px;
+}
+img.keys{
+	width: 700px;
+}
+p{
+	font-family: calibri light;
+	letter-spacing: 1px;
+	text-align: center;
+	width: 450px;
+}
