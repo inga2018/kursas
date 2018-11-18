@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var varduSarasas = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"]; 
+		var name = prompt('Įrašykite vardą', "");
+		var sarasasBeVardo = [];
+		
+		function sukurtiMasyvaBeVardo (sarasas, vardas){
+
+			for (i = 0; i <sarasas.length; i++){
+				if (sarasas[i]!==vardas)
+				{
+					sarasasBeVardo.push(sarasas[i]);
+				}
+			}
+		}
+		sukurtiMasyvaBeVardo(varduSarasas,name);
+		function isvestiSarasa (item, index){
+			console.log(item)
+		}
+		sarasasBeVardo.forEach(isvestiSarasa);
+
+	</script>
+</body>
+</html>
