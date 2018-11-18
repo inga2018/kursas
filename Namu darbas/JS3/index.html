@@ -8,13 +8,15 @@
 	<script type="text/javascript">
 		//dviejų skaičių dalyba
 
-		var PirmasSkaicius = 210;
-		var AntrasSkaicius = 70;
-		var Dviejuskaiciudalyba = PirmasSkaicius /=AntrasSkaicius;
-		console.log(Dviejuskaiciudalyba);
-		document.write(Dviejuskaiciudalyba);
-		alert(Dviejuskaiciudalyba);
-	
+		var pirmasSkaicius = 210;
+		var antrasSkaicius = 70;
+
+		dviejuSkaiciuDalyba(pirmasSkaicius, antrasSkaicius);
+
+		function dviejuSkaiciuDalyba (pirmasSkaicius,antrasSkaicius){
+			alert (Number (pirmasSkaicius)/Number (antrasSkaicius));
+			console.log (Number (pirmasSkaicius)/Number (antrasSkaicius));
+		}
 	</script>
 
 </body>
