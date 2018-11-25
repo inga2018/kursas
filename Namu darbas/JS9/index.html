@@ -9,8 +9,7 @@
 	<script type="text/javascript">
 		var varduSarasas = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"]; 
 		var name = prompt('Įrašykite vardą', "");
-		var sarasasBeVardo = [];
-		console.log (item);
+		var sarasasBeVardo = [];	
 		
 		function sukurtiMasyvaBeVardo (sarasas, vardas){
 
@@ -20,10 +19,12 @@
 					sarasasBeVardo.push(sarasas[i]);
 				}
 			}
-			return sarasas - vardas;
 		}
+			
 		sukurtiMasyvaBeVardo(varduSarasas,name);
-		function sarasasBeVardo (index, item){
+		function isvestiSarasa (item, index){
+			console.log(item);
+			return sarasasBeVardo;
 		}
 		sarasasBeVardo.forEach(isvestiSarasa);
 
