@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style type="text/css">
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  main {
+   flex: 1 0 auto;
+  }
+  #dropdown1 {
+  top: 100% !important;
+  }
+  .fa-facebook {
+  background: #3B5998;
+  color: white;
+  }
+  .fa-youtube {
+  background: #bb0000;
+  color: white;
+  }
+  .fa-google {
+  background: #dd4b39;
+  color: white;
+  }
+  .fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  }
+  </style>
+</head>
+<body>
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="steel.html">PLIENAS</a></li>
+    <li class="divider"></li>
+    <li><a href="copper.html">VARIS</a></li>
+    <li class="divider"></li>
+    <li><a href="aluminum.html">ALIUMINIS</a></li>
+  </ul>
+  <ul id="dropdown2" class="dropdown-content">
+    <li><a href="steel.html">PLIENAS</a></li>
+    <li class="divider"></li>
+    <li><a href="copper.html">VARIS</a></li>
+    <li class="divider"></li>
+    <li><a href="aluminum.html">ALIUMINIS</a></li>
+  </ul>
+  <nav class="grey darken-2">
+    <div class="nav-wrapper">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">PAGRINDINIS</a></li>
+        <li><a class="dropdown-trigger" href="" data-target="dropdown1">METALAS<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="calculation.html">SKAIČIUOKLĖ</a></li>
+        <li><a href="quiz.html">PASITIKRINK ŽINIAS</a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">PAGRINDINIS</a></li>
+    <li><a class="dropdown-trigger" href="" data-target="dropdown2">METALAS<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a href="calculation.html">SKAIČIUOKLĖ</a></li>
+    <li><a href="quiz.html">PASITIKRINK ŽINIAS</a></li>
+  </ul>
+<main>
+  Tekstas
+</main>
+<footer class="page-footer grey darken-2">
+  <div class="footer-copyright">
+    <div class="container">
+     © 2018 Visos teisės saugomos
+      <div class="fixed-action-btn">
+      <a class="btn-floating btn-large red">
+        <i class="large material-icons">mode_edit</i>
+      </a>
+      <ul>
+        <li><a class="" href="https://www.google.com/"><i class="fa fa-google"></i></a></li>
+        <li><a class="" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $(".dropdown-trigger").dropdown();
+    $('.fixed-action-btn').floatingActionButton();
+  });
+</script>
+</body>
+</html>
