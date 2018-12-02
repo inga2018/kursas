@@ -1,27 +1,39 @@
-<!--  //Įvestus duomenis panaudokite stačiakampio ploto apskaičiavimui. -->
 <?php
-if( isset($_POST['submit']) )
-{
-	$ilgis = htmlentities($_POST['ilgis']);
-	$plotis = htmlentities($_POST['plotis']);
-	$sandauga = $ilgis * $plotis;
+
+$txt = "";
+
+session_start();
+
+if (isset($_POST['submit']) && (($_POST['ilgis']) && ($_POST['plotis'])!= "")) {
+	$_SESSION['number'] = $_POST['ilgis'] * $_POST['plotis'] ;
+	header("Location: ". $_SERVER['REQUEST_URI']);
+	exit;
+} else {
+	if(isset($_SESSION['number'])) {
+		$txt = $_SESSION['number'];
+		unset($_SESSION['number']);
+	}
 }
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
 	<title></title>
 </head>
 <body> <!-- Sukurkite formą, kuri leis vartotojui įvesti stačiakampio ilgį ir plotį. -->
-	<form action="" method="POST">
-		Stačiakampio ilgis: <input type="text" name="ilgis" id="ilgis"></input>
-		Stačiakampio plotis: <input type="text" name="plotis" id="plotis"></input>
-		<input type="submit" name="submit" value="PATEIKTI"><br>
-		<!-- Rezultatą išveskite į naršyklę.  -->
-		<?php if( isset($sandauga) ) echo  "Stačiakampio, kurio kraštinės yra $ilgis ir $plotis, plotas: $sandauga";
-		?>
-	</form>
+	<?php
+	if($txt != "") {
+		echo "Stačiakampio plotas: $txt";
+	} else {
+	?>
+		<form action="" method="POST">
+			Stačiakampio ilgis: <input type="number" name="ilgis" />
+			Stačiakampio plotis: <input type="number" name="plotis" />
+			<input type="submit" name="submit" value="PATEIKTI"><br>
+			<!-- Rezultatą išveskite į naršyklę.  -->
+
+		</form>
+	<?php } ?>
 
 </body>
 </html>
