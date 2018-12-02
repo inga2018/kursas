@@ -1,8 +1,8 @@
 <?php
 $cities3 = [//Sukurk ir išvesk naują $cities3 masyvą masyve, kurio duomenys: 
-'Tokijas' => [13.6, 1868, 'Japonija'],
-'Vasingtonas' => [0.6, 1790, 'JAV'],
-'Maskva' => [11.5, 1147, 'Rusija'],
+$Tokijas = [13.6, 1868, 'Japonija'],
+$Vasingtonas = [0.6, 1790, 'JAV'],
+$Maskva = [11.5, 1147, 'Rusija'],
 ];
 print_r($cities3);
 
