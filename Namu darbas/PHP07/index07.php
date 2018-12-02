@@ -11,7 +11,6 @@ print_r($cities4);
 	<ul>
 		<?php //Sukurk <ul> ir panaudok for ciklą, kuris pereis visą $cities4 masyvą. Naudok count( ) funkciją, kad nustatytum masyvo elementų kiekį.
 		for($i = 0; $i < count($cities4); $i++){
-			echo count ($cities4);
 			echo "<li>$cities4[$i]</li>"; //for ciklo viduje, sukurk <li>, kad galėtum išvesti miestų pavadinimus.
 		}
 		?>
