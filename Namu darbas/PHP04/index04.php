@@ -6,9 +6,9 @@ print_r($cities); //Panaudok print_r funkciją taip, kad ji išvestų masyvo 
 $cities[] = 'Tokijas'; //Eilutėje, kuri yra iškart po masyvo deklaracijos, pridėk naują miestą “Tokijas” 
 
 $cities2 =[ //Sukurk ir išvesk asociatyvų masyvą cities2: tokijas - 13.6, vasingtonas - 0.6, maskva - 11.5
-'tokijas' => '13.6',
-'vasingtonas' => '0.6',
-'maskva' => '11.5',
+'tokijas' => 13.6,
+'vasingtonas' => 0.6,
+'maskva' => 11.5
 ];
 print_r($cities2);
 
