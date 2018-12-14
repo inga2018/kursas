@@ -1,3 +1,5 @@
+/* START OF QUIZ */
+
 *					{ margin: 0; padding: 0; }
 body				{ font: 14px Georgia, serif; }
 
@@ -24,3 +26,6 @@ h1                  { margin: 25px 0; font: 14px Georgia, Serif; text-transform:
 #quiz h3 {
    font-size: 17px; margin: 0 0 1px 0; color: #666;
 }
+
+/* END OF QUIZ */
+
